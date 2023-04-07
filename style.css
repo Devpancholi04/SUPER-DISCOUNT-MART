@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Freehand&display=swap');
+body{
+    background-color: grey;
+}
+
+*{
+    margin: 1;
+    padding: 1;
+}
+
+nav{
+    font-family: 'Courgette', cursive;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: white;
+    text-align: right;
+}
+
+nav ul li{
+    padding: 0 12px;
+    text-align: right;
+}
+
+.brand img{
+    width: 55 px;
+    padding: 0 8px;
+}
+
+.icons span{
+    cursor: pointer;
+}
+
+/* footer design */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    background-color: #12131c;
+}
+
+i{
+    font-size: 2.4rem;
+}
+
+.footer{
+    padding-block: 5rem;
+    background-color: #151823;
+    color: #666873;
+}
+
+.footer__container{
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.footer__top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 20px;
+}
+
+.footer__title{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__list-item{
+    list-style: none;
+}
+
+.footer__list-link{
+    text-decoration: none;
+    color: inherit;
+    transition: color .25s;
+}
+
+.footer__list-link:hover{
+    color: #fff;
+}
+
+.company__info{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 5rem;
+}
+
+.company__logo{
+    color: #fff;
+}
+
+.company__info ul{
+    flex-direction: row;
+}
+
+.copyright{
+    margin-top: auto;
+}
+
+@media screen and (min-width: 40em) {
+    .company__info{
+        grid-column: span 2;
+    }
+}
+
+.footer__list-link i{
+    font-size: large;
+}
